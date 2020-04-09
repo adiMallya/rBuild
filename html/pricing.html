@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>rBuild</title>
+         <!--Icon-->
+    <link rel="icon" href="images/icon3.png" type="image/x-icon" />
+        <!--Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css"/>    
+    <script type="text/javascript" src="estimator.js"></script>
+</head>
+<body>
+     
+    <header class="all-header-navbar-fixed-top">
+    <!--Top Header Area-->
+    <section class="top_header_area">
+	    <div class="container1">
+            <ul class="nav navbar-nav navbar-right social_nav">
+                <li><a href="#"><i class="fa fa-facebook" ></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" ></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" ></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" ></i></a></li>
+                <li class="cont"><a href="consult.html">Contact Us </a></li>
+            </ul>
+	    </div>
+	</section>
+    <!--End of Top Header Area-->
+
+    <!--Navigation Area-->
+    <div class="navbar">
+        <div class="container2">
+                <div class="top-nav">
+                    <a class="logo-to-main" href="index.html"><img class="logo-img" src="images/rsz_2website_logo1.png" alt=""></a>
+                        <ul>
+                          <li><a href="index.html">HOME</a></li>
+                          <li><a href="about.html">ABOUT US</a></li>
+                          <li><a href="construction.html">CONSTRUCTION</a></li>
+                          <li><a href="renovation.html">RENOVATION</a></li>
+                          <li><a href="pricing.html">PRICING</a></li>
+                          <li><a href="joinus.html"><button class="contact-btn">JOIN US</button></a></li>
+                        </ul>
+                </div>
+        </div>
+    </div> 
+    </header>                                                                                                                                            
+    <!--End Of Navigation Area-->
+    <!--Estimator-->
+    <section class="est-form">
+    <div class="container">
+        <form action="#" name="estform" method="GET">
+            <h2><i class="fa fa-calculator" aria-hidden="true"></i> Construction Cost Estimator</h2>
+             </br>
+             <div class="row-p">
+                <div class="col-25">
+                    <label for="city1">City</label>
+                </div>
+                <div class="col-75">
+                    <select id="city1" name="city1">
+                        <option value="bangalore">Bangalore</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="kolkata">Kolkata</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="pune">Pune</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row-p">
+                <div class="col-25">
+                    <label for="grnd">Ground Floor Built Up Area</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="grnd" name="grnd" value="1200" onblur="minArea()">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <select id="size" name="size" style="margin-left: 40px;">
+                        <option value="sqft">Sq Feet</option>
+                        <option value="sqyrd">Sq Yard</option>
+                        <option value="sqmt">Sq Meter</option>
+                    </select>                    </div>
+            </div>
+            <div class="row-p">
+                <div class="col-25">
+                    <label for="floors">Floors</label>
+                </div>
+                <div class="col-75">
+                    <select id="floors" name="floors">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row-p">
+                <div class="col-25">
+                    <label for="bhk">BHK per floor</label>
+                </div>
+                <div class="col-75">
+                    <select id="bhk" name="bhk">
+                        <option value="1">1 BHK</option>
+                        <option value="2">2 BHK</option>
+                        <option value="3" selected>3 BHK</option>
+                        <option value="4">4 BHK</option>
+                        <option value="5">5 BHK</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row-p">
+                <div class="col-25">
+                    <label for="paint">Paint Type</label>
+                </div>
+                <div class="col-75">
+                    <input type="radio" id="paint" name="paint" value="budget" checked>Budget
+                    <input type="radio" id="paint" name="paint" value="basic">Basic
+                    <input type="radio" id="paint" name="paint" value="premium">Premium
+                </div>
+            </div>
+            <div class="row-p">
+                <div class="col-25">
+                    <label for="ftype">Flooring Type</label>
+                </div>
+                <div class="col-75">
+                    <input type="radio" id="ftype" name="ftype" value="tiles" checked>Tiles
+                    <input type="radio" id="ftype" name="ftype" value="marble">Marble
+                    <input type="radio" id="ftype" name="ftype" value="granite">Granite
+                </div>
+            </div>
+            <div class="row-p">
+                <input type="button" value="ESTIMATE NOW" onclick="totalPrice()">
+            </div> 
+            <div clas="row-p">
+                 <p id="output" name="output" style="width: 100%;height: 60px;text-align: center;background-color:white;color:black"></p>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="construct-content">
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <div class="card" style="background-color:rgb(223, 102, 102);">
+                        <h3>Budget Package</h3>
+                        <h4>Rs 1465 per sqft</h4>
+                        <p>(Incl. of GST)</p>
+                        <a href="bdg_pkg.html">View More..</a>
+                </div>
+            </div>
+            <div class="column">
+              <div class="card" style="background-color:rgb(101, 170, 197);">
+                      <h3>Classic Package</h3>
+                      <h4>Rs 1670 per sqft</h4>
+                      <p>(Incl. of GST)</p>
+                       <a href="bdg_pkg.html">View More..</a>
+              </div>
+          </div>
+          <div class="column">
+              <div class="card" style="background-color:rgb(113, 199, 180);">
+                      <h3>Premium Package</h3>
+                      <h4>Rs 1770 per sqft</h4>
+                      <p>(Incl. of GST)</p>
+                      <a href="bdg_pkg.html">View More..</a>
+              </div>
+          </div>
+          <div class="column">
+              <div class="card" style="background-color:rgb(159, 129, 194);">
+                      <h3>Royale Package</h3>
+                      <h4>Rs 1910 per sqft</h4>
+                      <p>(Incl. of GST)</p>
+                      <a href="bdg_pkg.html">View More..</a>
+              </div>
+          </div>
+        </div>
+        <section class="poster-content">
+            <div class="shape-card">
+                <p>Customise your home from Material, Interiors, Furnishing to Courtyards or Swimming pools! We cover everything to make the perfect home for you! Get in touch with experts to discuss your ideas and preferences.</p>
+            </div>
+              <div>
+              <h3>DONT LIKE OUR PACKAGES?</h3>
+              <div class="border"></div>
+              <h4>Customise your package to build your'e perfect home!</h4>
+              <a href="consult.html"><button >Book a free consultation</button></a>
+              </div>
+        </section>
+      </div>   
+  </section>
+    <!--End-->
+    <!-- Footer Area -->    
+<footer id=footer-area>
+    <div class="footer">
+            <div class="inner-footer">
+                <div class="footer-items">
+                <h1>rBUILD <sup>&reg;</sup></h1>
+                <p>Building Together, Couldn't get Better.</p>
+                </div>
+                <div class="footer-items">
+                    <h2>QUICK LINK</h2>
+                    <div class="border"></div>
+                    <ul>
+                        <li><a href="about.html"><i class="fa fa-chevron-right"></i>About Us</a></li>
+                        <li><a href="pricing.html"><i class="fa fa-chevron-right"></i>Pricing</a></li>
+                        <li><a href="construction.html"><i class="fa fa-chevron-right"></i>Construction</a></li>
+                        <li><a href="renovation.html"><i class="fa fa-chevron-right"></i>Renovation</a></li>
+                        <li><a href="joinus.html"><i class="fa fa-chevron-right"></i>Join Us</a></li>
+                        <li><a href="#"><i class="fa fa-chevron-right"></i>Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-items">
+                    <h2>CONTACT US</h2>
+                    <div class="border"></div>
+                
+                        <p>Have questions, comments or just want to say hello:</p>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-envelope"></i>info@gmail.com</a></li>
+                            <li><a href="#"><i class="fa fa-phone"></i>+880 123 456 789</a></li>
+                        </ul>
+                        <div class="social-media">
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true" ></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true" ></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true" ></i></a>
+                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                </div>
+            </div> 
+            <div class="copyright_area">
+                &copy;rBuild 2020. All rights reserved. 
+            </div>
+        </div>
+    </footer>  
+    <!--End Footer Area -->

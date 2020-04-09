@@ -1,133 +1,131 @@
-var name = document.requestForm.name;
-var phno = document.requestForm.phno;
-var email = document.requestForm.mail;
-var larea = document.requestForm.larea;
-var budget = document.requestForm.budget;
-var y = document.requestForm.yes;
-var n = document.requestForm.no;
-
-function formValidation()
-{
-
-if(allLetter(name))
-{
-if(phoneNumeric(phno))
-{ 
-if(validateEmail(email)) 
-{   
-if(minArea(larea))
-{
-if(budgetCheck(budget))
+function allLetter()
 {    
-if(check(y,n))
+var uname = document.requestform.name;    
+var letter = /^[A-Za-z +]+$/;
+if(uname.value.match(letter))
 {
-}
-} 
-}
-} 
-}
-}
-return false;
-} 
-
-function allLetter(name)
-{ 
-var letter = /^[A-Za-z]+$/;
-if(name.value.match(letter))
-{
-return true;
+    setSuccesFor(uname);
+    document.requestform.phno.focus();
+    return true; 
 }
 else
 {
-alert('Your name must have alphabets only!');
-name.focus();
-return false;
+    setErrorFor(uname,"Invalid Name!");
+    if(uname.value === ''){
+        setErrorFor(uname,"Field cannot be left blank");
+        return false;
+    }
+    return false;
+    
 }
 }
-
-function phoneNumeric(phno)
+function phoneNumeric()
 { 
+var num = document.requestform.phno;    
 var phonenos = /^\d{10}$/;
-if(phno.value.match(phonenos))
+if(num.value.match(phonenos))
 {
-return true;
-}
-else
-{
-alert('Not a valid Phone Number!');
-phno.focus();
-return false;
-}
-}
-
-function validateEmail(email)
-{
-var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-if(email.value.match(mailformat))
-{
-return true;
-}
-else
-{
-alert("You have entered an invalid email address!");
-email.focus();
-return false;
-}
-}
-
-function minArea(larea)
-{ 
-var numbers = /^[0-9]+$/;
-if(larea.value.match(numbers) && larea.value >= 1200)
-{
+    setSuccesFor(num);    
+    document.requestform.mail.focus();  
     return true;
 }
 else
 {
-alert('You have entered a value less than the minimun area required!');
-larea.focus();
-return false;
+    setErrorFor(num,"Invalid Phone No.!");
+    if(num.value === ''){
+        setErrorFor(num,"Field cannot be left blank");
+        return false;
+    }
+    return false;
 }
 }
-
-function budgetCheck(budget)
+function validateEmail()
 {
-   if(budget.value == "")
-   {
-       return true;
-   } 
-   else if(budget.value >= 1800000){
-       return true;
-   }
-   else{
-       alert('Sorry we cannot offer you help in this budget, for the rates in market you should ideally keep atleast Rs 18,00,000 as your budget');
-       budget.focus();
-       return false;
-   }
-}
-
-function check(y,n)
+var email = document.requestform.mail;    
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(email.value.match(mailformat))
 {
-x=0;
-
-if(y.checked) 
-{
-x++;
-} 
-if(n.checked)
-{
-x++; 
-}
-if(x==0)
-{
-alert('Select Yes/No');
-umsex.focus();
-return false;
+    setSuccesFor(email);    
+    document.requestform.larea.focus();  
+    return true;
 }
 else
 {
-alert('Thank You! We will get back to you soon.');
-window.location.reload()
-return true;
+    setErrorFor(email,"Invalid Email-id!");
+    if(email.value === ''){
+        setErrorFor(email,"Field cannot be left blank");
+        return false;
+    }
+    return false;
 }
 }
+function minArea()
+{ 
+var area = document.requestform.larea;    
+var numbers = /^[0-9]+$/;
+if(area.value.match(numbers) && parseInt(area.value)>= 1200)
+{
+    setSuccesFor(area);    
+    document.requestform.budget.focus();  
+    return true;
+}
+else
+{
+    setErrorFor(area,"");
+    if(area.value === ''){
+        area.value = 1200;
+        setSuccesFor(area);
+    }
+    return false;
+}
+}
+function budgetCheck()
+{
+   var bdg = document.requestform.budget; 
+   if(bdg.value == "")
+   {
+       setSuccesFor(bdg);
+       return true;
+   } 
+   else if(parseInt(bdg.value) >= 1800000){
+       setSuccesFor(bdg);
+       return true;
+   }
+   else{
+        setErrorFor(bdg,"Minimum Rs 18,00,000!");
+        return false;
+   }
+}
+
+function setErrorFor(input,message){
+    const parent = input.parentElement;
+    const small = parent.querySelector('small');
+    
+    small.innerText = message;
+    parent.className = 'col-75 error';
+}
+
+function setSuccesFor(input){
+    const parent = input.parentElement;
+    parent.className =  'col-75 success';
+}
+function onSubmission(){
+    var n = allLetter();
+    var p = phoneNumeric();
+    var e = validateEmail();
+    var a = minArea();
+    var b = budgetCheck();
+    if (n.value == false || p.value == false ||e.value == false ||a.value == false|| b.value == false){
+        document.getElementById("btnsubmit").addEventListener("click",function(event){
+        event.preventDefault();
+    });
+    }
+    else{
+        const frm = document.getElementById("form1");
+        alert('Thank You! We will get in touch soon.');
+        frm.submit();
+        frm.reset();
+        return false;
+    }
+}
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>rBuild</title>
+         <!--Icon-->
+    <link rel="icon" href="images/icon3.png" type="image/x-icon" />
+        <!--Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css"/>    
+    <script type="text/javascript" src="consult.js"></script>
+</head>
+<body>
+     
+    <header class="all_header_navbar-fixed-top">
+    <!--Top Header Area-->
+    <section class="top_header_area">
+	    <div class="container1">
+            <ul class="nav navbar-nav navbar-right social_nav">
+                <li><a href="#"><i class="fa fa-facebook" ></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" ></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" ></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" ></i></a></li>
+                <li class="cont"><a href="consult.html">Contact Us </a></li>               
+            </ul>
+	    </div>
+	</section>
+    <!--End of Top Header Area-->
+
+    <!--Navigation Area-->
+    <div class="navbar">
+        <div class="container2">
+                <div class="top-nav">
+                    <a class="logo-to-main" href="index.html"><img class="logo-img" src="images/rsz_2website_logo1.png" alt=""></a>
+                        <ul>
+                          <li><a href="index.html">HOME</a></li>
+                          <li><a href="about.html">ABOUT US</a></li>
+                          <li><a href="construction.html">CONSTRUCTION</a></li>
+                          <li><a href="renovation.html">RENOVATION</a></li>
+                          <li><a href="pricing.html">PRICING</a></li>
+                          <li><a href="joinus.html"><button class="contact-btn">JOIN US</button></a></li>
+                        </ul>
+                </div>
+                
+        </div>
+    </div>
+    <!--End Of Navigation Area-->
+    </header>  
+    <!--Consultation-form-->
+    <section class="cslt-form">
+        <div class="container">
+            <form action="#" id="form4" name="consultform" method="GET">
+                <h2>100% hassle free and managed by us!</h2>
+                <div class="row-j">
+                    <div class="col-25">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="name" name="name" onblur="allLetter();">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small></small>
+                    </div>
+                </div>
+                <div class="row-j">
+                    <div class="col-25">
+                        <label for="phno">Phone</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="phno" name="phno" onblur="phoneNumeric();">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small></small>
+                    </div>
+                </div>
+
+                <div class="row-j">
+                    <div class="col-25">
+                        <label for="mail">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="mail" name="mail" onblur="validateEmail();">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small></small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="yesno">Category</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="radio" id="yesno" name="yesno" checked>Construction
+                        <input type="radio" id="yesno" name="yesno">Renovation
+                    </div>
+                </div>
+                <div class="row-j">
+                    <div class="col-25">
+                        <label for="city">City</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="city" name="city">
+                            <option value="bangalore">Bangalore</option>
+                            <option value="delhi">Delhi</option>
+                            <option value="kolkata">Kolkata</option>
+                            <option value="chennai">Chennai</option>
+                            <option value="pune">Pune</option>
+                        </select>
+                    </div>
+                </div>
+                <br/>
+                <div class="row-j">
+                    <input type="button" id="btnsubmit" value="SUBMIT" onclick="onSubmission();"/>
+                </div> 
+            </form>
+        </div>
+    </section>
+  <!-- Footer Area -->
+  <footer id=footer-area>
+    <div class="footer">
+            <div class="inner-footer">
+                <div class="footer-items">
+                <h1>rBUILD <sup>&reg;</sup></h1>
+                <p>Building Together, Couldn't get Better.</p>
+                </div>
+                <div class="footer-items">
+                    <h2>QUICK LINK</h2>
+                    <div class="border"></div>
+                    <ul> 
+                        <li><a href="about.html"><i class="fa fa-chevron-right"></i>About Us</a></li>
+                        <li><a href="pricing.html"><i class="fa fa-chevron-right"></i>Pricing</a></li>
+                        <li><a href="construction.html"><i class="fa fa-chevron-right"></i>Construction</a></li>
+                        <li><a href="renovation.html"><i class="fa fa-chevron-right"></i>Renovation</a></li>
+                        <li><a href="joinus.html"><i class="fa fa-chevron-right"></i>Join Us</a></li>
+                        <li><a href="#"><i class="fa fa-chevron-right"></i>Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-items">
+                    <h2>CONTACT US</h2>
+                    <div class="border"></div>
+                
+                        <p>Have questions, comments or just want to say hello:</p>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-envelope"></i>info@gmail.com</a></li>
+                            <li><a href="#"><i class="fa fa-phone"></i>+880 123 456 789</a></li>
+                        </ul>
+                        <div class="social-media">
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true" ></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true" ></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true" ></i></a>
+                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                </div>
+            </div> 
+            <div class="copyright_area">
+                &copy;rBuild 2020. All rights reserved. 
+            </div>
+        </div>
+ </footer>    
+    <!--End Footer Area -->
+</body>
+
+
+
+
+
+

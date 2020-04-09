@@ -1,0 +1,1244 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:300,300i,400,400i,500,500i,700,700i");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+};
+/*Top header area*/
+.top_header_area .container1{
+    display: block;
+    overflow: hidden;
+    padding-left: hidden;
+    height: 80px
+}
+.container1 ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+.container1 ul li a{  
+    float:right;
+    font-size: 29px;
+    text-align: center;
+    text-decoration: none;
+}
+.container1 ul  .cont a{
+       padding: 7px;
+       margin: 5px 8px;
+       font-size:25px;
+       color: #000; 
+}
+.container1 .fa{
+   padding: 7px;
+   width: 30px;
+   margin: 5px 8px;
+   border-radius: 50%;
+}
+.container1 .fa:hover{
+    opacity: 0.6;
+}
+.container1 .fa-facebook{
+    background: #3B5998;
+    color:white;
+}
+.container1 .fa-instagram{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color:white;
+}
+.container1 .fa-linkedin{
+    background:  #007bb5;
+    color:white;
+}
+.container1 .fa-twitter{
+    background: #55ACEE;
+    color:white;
+}
+/*END*/
+/*Navigation bar*/
+ .container2 .top-nav{
+    width: 120%;
+    height:125px;
+    text-align: center;
+    overflow:hidden;
+    background-color: white;
+    padding-left: 200px;
+}
+.top-nav .logo-img{
+    float: left;
+    width:7%;
+    margin: 0px 75px 75px 0px;
+    padding: 14px 25px;
+} 
+.top-nav ul{ 
+    display:inline;
+    list-style-type: none;
+    margin:0;
+    padding:14px 16px;
+    overflow: hidden;
+    background-color:white;
+}
+.top-nav ul li a{
+    font: 400 18px/59px "Roboto", sans-serif;
+    line-height: 75px;
+    float: left;
+    font-size: 20px;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.contact-btn{
+  font: 700 18px/59px "Roboto", sans-serif;
+    line-height: 42px;
+    width: 150%;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color:orange;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+}
+.contact-btn:hover{
+  background-color: darkorange;
+}
+.top-nav ul li a:hover{
+  color:grey; 
+}
+/*End*/
+/*Main Area*/
+.slider-area{
+  height:50%;
+  background-image: url("images/slider-2.jpg");
+  background-position: 50% 50%;
+}
+.promotion-text{
+    font: "Roboto", sans-serif ;
+    text-align: center;   
+}
+ .slide-1 .text{
+     padding-top:100px;
+     text-align: center;
+     font: 700 25px/25px "Roboto", sans-serif;
+     color: white;
+ }
+ .slide-1  .button{
+     background-color: orange;
+     width:20%;
+     border: none;
+     color: black;
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     font-size: 20px;
+ }
+ .slide-1 .button:hover{
+   color: darkorange;
+ }
+ .professional_builder {
+  background: whitesmoke;
+  padding-top: 5px;
+  padding-bottom: 40px;
+}
+.professional_builder .row{
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-right:20px;
+}
+.professional_builder .row .column{
+  text-align: center;
+  margin-left: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.professional_builder .row .column i {
+  font-size: 48px;
+  color:orange;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.professional_builder .row .column h4 {
+  font: 700 18px "Roboto", sans-serif;
+  color: #222222;
+  padding-bottom: 20px;
+}
+.our_feature_area {
+  padding-bottom: 90px;
+  background: #fefefe;
+}
+.our_feature_area .tittle{
+  text-align: center;
+  font: 700 20px "Oswald",sans-serif;
+  color: grey;
+  text-transform: uppercase;
+}
+.our_feature_area .bottom-border{
+  background-color:orange;
+  height: 5px;
+  width: 90px;
+  margin-left: 48%;
+  margin-right:32%;
+}
+.our_feature_area .feature_content{
+  float: left;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.our_feature_area  .subtittle {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font: 400 15px "Roboto",sans-serif;
+  color: gray;
+}
+.our_feature_area .feature_content .media {
+  padding-bottom: 15px;
+}
+.our_feature_area .feature_content .media .media-left {
+  padding-right: 20px;
+}
+.our_feature_area .feature_content .media .media-left a i{
+  text-align: center;
+  color:rgb(235, 163, 30) ;
+  line-height: 50px;
+  font-size: 80px;
+  padding-bottom: 25px;
+}
+.our_feature_area .feature_content .media .media-body{
+  text-align: justify;
+}
+.our_feature_area .feature_content .media .media-body a {
+  font: 700 18px "Roboto", sans-serif;
+  color: #222222;
+  text-transform: uppercase;
+}
+.our_feature_area .feature_content .media .media-body a:hover, .our_feature_area .feature_row .feature_content .media .media-body a:focus {
+  color:grey;
+}
+.our_feature_area .feature_content .media .media-body p {
+  font: 400 20px "Roboto", sans-serif;
+  color: #555555;
+  padding-top: 20px;
+}
+.our_achievments_area {
+  background: url("../images/achievments_bg.jpg") no-repeat fixed;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 100px;
+}
+.our_achievments_area:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+}
+.our_achievments_area .tittle h2 {
+  color: #fff;
+  padding-top: 20px;
+  font: 400 30px "Oswald",sans-serif;
+}
+.our_achievments_area .row {
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 18%;
+  margin-right: 15%;
+}
+.our_achievments_area .row .col {
+  text-align: center;
+  padding-right: 80px;
+  padding-left: 80px;
+}
+.our_achievments_area .row .col i {
+  font-size: 30px;
+  color: #fff;
+  display: block;
+  padding-top: 10px;
+}
+.our_achievments_area .row .col .counter {
+  font: 700 40px "Roboto", sans-serif;
+  color: #f6b60b;
+  display: block;
+  padding-top: 23px;
+}
+.our_achievments_area .row .col h6 {
+  font: 400 14px "Roboto", sans-serif;
+  color: #fff;
+  padding-top: 20px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+/*End*/
+/*ABOUT-PAGE*/
+/*Banner*/
+.banner_area {
+  background: url("/images/banner-bg.jpg");
+  background-position: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding-top: 25px;
+  padding-bottom: 45px;
+}
+.banner_area:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+}
+.banner_area h2 {
+  color: #fff;
+  font: 400 40px "Oswald", sans-serif;
+  text-transform: uppercase;
+  padding-top: 60px;
+}
+.banner_area2 {
+  background: url("/images/web-banner.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding-top: 25px;
+  padding-bottom: 12%;
+}
+.banner_area2::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+}
+.banner_area2 .reno-cunsult p{
+  color: #fff;
+  font: 40 25px "Roboto", sans-serif;
+  padding-top: 10px;
+}
+.banner_area2 .reno-cunsult  #p1{
+  color: #fff;
+  font: 400 38px "Roboto", sans-serif;
+  line-height: 0;
+}
+.banner_area2 .reno-cunsult button{
+  background-color: rgba(233, 158, 60, 0.911);
+  border:none;
+  border-radius: 5px;
+  padding: 15px 32px;
+  width:200px;
+  text-align: center;
+  cursor: pointer;
+  font: 800 20px "Roboto", sans-serif;
+  color: white;
+}
+ /*End*/
+ /*About Content*/
+  .about_us_area {
+    background: #fefefe;
+    padding-bottom: 0px;
+  }
+  .about_us_area .about_row .subtittle h2{
+    text-align: center; 
+    font: 400 35px "Oswald", sans-serif;
+    border-bottom:1px solid #CCC;
+    float:left;
+    width:100%;
+    padding-bottom:3px;
+    }
+  .about_us_area .about_row .paragraph{
+    width: 63%;
+    height: 10%;
+    margin: 5%;
+    padding: 14%;
+    display: block;
+    font: 400 17px/20px "Roboto", sans-serif;
+    color: grey;
+    padding-top:2px ;
+    padding-bottom:0px ;
+    text-align: justify;
+  }
+ /*Our Team*/
+ .our_team_area {
+    padding-bottom: 100px;
+    background: #fefefe;
+  }
+  .our_team_area .team_container .tittle h2{
+    text-align: center;
+    font: 400 35px "Oswald", sans-serif;
+    border-bottom:1px solid #CCC;
+    float:left;
+    width:100%;
+    padding-bottom:3px;
+  }
+  .our_team_area .team_container .row{
+    text-align: center;
+    margin-left: 25%;
+    margin-bottom: 20px;
+ }
+ .our_team_area .team_container .row:after{
+   content: "";
+   display:table;
+   clear: both;
+ }
+ .column {
+    float: left;
+    width: 32.4%;
+    margin-left: 20px;
+    margin-top: 50px;
+    padding:  0px;
+    width: 20%;
+    height: 5%;
+    background-color: white;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .card .container {
+    padding: 0 16px;
+    text-align: center;
+  }
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table ;
+  }
+  .title {
+    color: grey; 
+  }
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  .button:hover {
+    background-color: #555;
+  }
+ /*End*/
+ /*END*/
+ /*CONSTRUCTION PAGE*/
+  .req-form{
+    background-image: url("images/web-banner.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    height: 850px;
+  }
+  .req-form:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    z-index: -1;
+  }
+  .req-form .container{
+    background-color:#f2f2f2;
+    width:600px;
+    height: 720px;
+    border:0;
+    padding:30px 40px;
+    margin:120px;
+    margin-top:20px;
+    margin-left:40em;
+    margin-right: 40em;
+  }
+  .req-form .container form h2{
+    padding-top: 0;
+    font: 450 25px "Roboto", sans-serif;
+    border-bottom: 1px solid grey; ;
+  }
+  .req-form .container form p{
+    font: 40 15px "Roboto", sans-serif;
+  }
+  .req-form .container form h4{
+    font: 400 19px "Roboto", sans-serif;
+    padding-bottom: 0;
+  }
+  .req-form .container label {
+    padding: 5px 10px 5px 0;
+    display: inline-block;
+  }
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .col-75 input{
+    border:2px solid white;
+  }
+  .col-75 #name,#phno,#mail,#budget{
+     width:90%;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .req-form .col-75.success input{
+    border-color: #2ecc71; 
+  }
+  .req-form .col-75.error input{
+    border-color: #e74c3c; 
+  }
+  .req-form .row i{
+   position: absolute;
+   padding:5px;
+   visibility: hidden;
+  }
+  .req-form .col-75 small{
+    margin-left: 40%;
+    visibility:hidden;
+  }
+  .req-form .col-75.success i.fa-check-circle{
+    color: #2ecc71;
+    visibility:visible;
+  }
+  .req-form .col-75.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility:visible;
+  }
+  .req-form .col-75.error small{
+    color: #e74c3c;
+    visibility:visible;
+  }
+  .row input[type=button]{
+    background-color:orange;
+    color:white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  .row input[type=submit]:hover{
+    background-color:darkorange;
+  }
+  .construct-content{
+   padding-top: 20px; 
+   height: 880px;
+  } 
+  .construct-content .title h2{
+    text-align: center; 
+    font: 400 35px "Oswald", sans-serif;
+    border-bottom:1px solid #CCC;
+    float:left;
+    width:100%;
+    padding-bottom:3px;
+  }
+  .construct-content .container .row{
+     margin-left: 350px;
+  }
+  .construct-content .container .row:after{
+    content: "";
+    display:table;
+    clear: both;
+  }
+  .construct-content .container .column{
+    float:left;
+    margin-left:15px;
+    width:17%;
+    padding: 15px 10px;
+  } 
+  .construct-content .container .card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 16px;
+    padding-top: 2px;
+    border-radius: 2%;
+    text-align:center;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  .construct-content .container .card h3{
+    font: 450 30px "Oswald", sans-serif;
+    color: white;
+  }
+  .construct-content .container .card h4{
+    font: 450 22px "Oswald", sans-serif;
+    color:black;
+  }
+  .construct-content .container .card p{
+    font: 400 15px "Roboto", sans-serif;
+    color:black;
+  }
+  .construct-content .container .card a{
+    text-decoration: none;
+    color:black;
+  }
+  .construct-content .container .card a:hover{
+    color: darkorange;
+  }
+  .construct-content .container .poster-content{
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 360px;
+    background-image:url("images/poster1.jpeg");
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .construct-content .container .poster-content div{
+    float:right;
+    padding-top: 80px;
+    padding-right: 0;
+    padding-left: 80px;
+    margin-right: 120px;
+  }
+  .construct-content .container .poster-content div h3{
+    color:rgba(250, 251, 136, 0.911);
+    font: 800 30px "Robo",sans-serif;
+  }
+  .construct-content .container .poster-content div h4{
+    color: white;
+    font: 400 20px "Robo", sans-serif;
+  }
+  .construct-content .container .poster-content div button{
+    background-color: rgba(121, 160, 235, 0.911);
+    border:none;
+    border-radius: 5px;
+    padding: 15px 32px;
+    width:200px;
+    text-align: center;
+    cursor: pointer;
+    font: 800 20px "Roboto", sans-serif;
+    color: white;
+  }
+  .construct-content .container .poster-content .shape-card{
+    float:left;
+    margin-left: 80px;
+    margin-top: 200px;
+    padding-top: 19px;
+    padding-bottom:0;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 345px;
+    height: 130px;
+    position: relative;
+    border-radius: 12px;
+    background: rgba(228, 113, 109, 0.89);
+  }
+  .construct-content .container .poster-content .shape-card::before{
+    content: "";
+    width: 0;
+    height: 0;
+    right: 100%;
+    top: 38px;
+    position: absolute;
+    border-top: 13px solid transparent;
+    border-right: 26px solid rgba(228, 113, 109,0.89);
+  }
+  .poster-content .shape-card p{
+    color: white;
+    margin-top: 0;
+    font: 700 15px "Roboto", sans-serif;
+  }
+ /*END*/
+ /*RENOVATION PAGE*/
+  .reno-content .container{
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .reno-content .container .row{
+    margin-left: 410px;
+    margin-bottom: 60px;
+ }
+ .reno-content .container .row:after{
+   content: "";
+   display:table;
+   clear: both;
+ }
+ .reno-content .container .column{
+   float:left;
+   margin-left:30px;
+   width:15%;
+   padding: 15px 5px;
+ } 
+ .reno-content .container .card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding-top: 25px;
+  padding-bottom:15px ;
+  border-radius: 2%;
+  text-align:center;
+  background-color: #fff;
+  cursor: pointer;
+}
+.reno-content .container .card:hover{
+  color:orangered
+}
+.reno-content .container .sub-tittle{
+  text-align: center;
+  font: 700  "Oswald", sans-serif;
+  border-bottom: 1px solid #CCC;
+}
+.reno-content .container .sub-section1 .row{
+  margin-left: 410px;
+  margin-bottom: 60px; 
+}
+.reno-content .container .sub-section1 .row:after{
+  content: "";
+  display:table;
+  clear: both;
+}
+.reno-content .sub-section1 .column{
+  float:left;
+  margin-left:10px;
+  width:35%;
+  padding: 25px 10px;
+}
+.reno-content .sub-section1 .column a{
+  text-decoration: none;
+  color: white;
+}
+.reno-content .sub-section1 .card1{
+  padding-top: 35px;
+  padding-bottom:35px;
+  border-radius: 2%;
+  text-align:center;
+  cursor: pointer;
+  background-image: url("images/renovate.png");
+}
+.reno-content .sub-section1 .card2{
+  padding-top: 35px;
+  padding-bottom:35px ;
+  border-radius: 2%;
+  text-align:center;
+  cursor: pointer;
+  background-image: url("images/stages.png");
+}
+.reno-content .sub-section1 .card3{
+  padding-top: 35px;
+  padding-bottom:35px ;
+  border-radius: 2%;
+  text-align:center;
+  cursor: pointer;
+  background-image: url("images/quality.png");
+}
+.reno-content .sub-section1 .card4{
+  padding-top: 35px;
+  padding-bottom:35px ;
+  border-radius: 2%;
+  text-align:center;
+  cursor: pointer;
+  background-image: url("images/planning.png");
+}
+.reno-content .sub-section2 article{
+  display: block;
+  text-align: center;
+  border: gray 1px solid ;
+  margin-right: 20%;
+  margin-left: 22%;
+}
+.reno-content .sub-section2 article div{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.reno-content .sub-section2 article h3{
+  text-align: center;
+}
+.reno-content .sub-section2 article p{
+  text-align: center;
+  color: gray;
+  font: 400 "Oswald", sans-serif;
+}
+ /*END*/
+ /*PRICING*/
+ .est-form{
+   background-image: url("images/cns-2.jpg");
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   z-index: 1;
+   padding-top: 25px;
+   padding-bottom: 20px;
+   height: 750px;
+ }
+ .est-form::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+ }
+ .est-form .container{
+  background-color:#f2f2f2;
+  width:600px;
+  height: 550px;
+  border:0;
+  padding:30px;
+  margin:120px;
+  margin-top:2em;
+  margin-left:38em;
+  margin-right: 40em;
+}
+.est-form .container form h2{
+  text-align: center;
+  padding-top: 0;
+  font: 450 25px "Roboto", sans-serif;
+}
+.est-form .container label {
+  padding: 5px 10px 5px 0;
+  display: inline-block;
+}
+.est-form .container .row-p .col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 16px;
+}
+.est-form .container .row-p .col-75 #output{
+  width: 100%;
+}
+.est-form .container .row-p .col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 16px;
+}
+.row-p:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.est-form .col-75.success input{
+  border-color: #2ecc71; 
+}
+.est-form .col-75.error input{
+  border-color: #e74c3c; 
+}
+.est-form .row-p i{
+ position: absolute;
+ padding:5px;
+ visibility: hidden;
+}
+.est-form .col-75.success i.fa-check-circle{
+  color: #2ecc71;
+  visibility:visible;
+}
+.est-form .col-75.error i.fa-exclamation-circle{
+  color: #e74c3c;
+  visibility:visible;
+}
+.row-p input[type=button]{
+  background-color:orange;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font:450 20px "Roboto", sans-serif;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.row-p input[type=submit]:hover{
+  background-color:darkorange;
+}
+ /*END*/
+ /*JOIN AREA*/
+ .join-form{
+  background-image: url("images/stages-art.jpg");
+  background-size: cover;
+  background-position: 20% 20%;
+  position: relative;
+  z-index: 1;
+  height: 550px;
+}
+.join-form::after{
+ content: "";
+ position: absolute;
+ top: 0;
+ background-color: rgba(0, 0, 0, 0.5);
+ left: 0;
+ right: 0;
+ bottom: 0;
+ display: block;
+ z-index: -1;
+}
+.join-form .title{
+  float: left;
+  margin-left: 100px;
+  margin-top: 100px;
+  font: 800 25px "Oswald",sans-serif;
+  color: white;
+}
+.join-form .container{
+ background-color:#f2f2f2;
+ width:600px;
+ height: 350px;
+ border:0;
+ padding:30px;
+ margin-top:3em;
+ float: right;
+ margin-right: 60px;
+}
+.join-form .container form h2{
+ text-align: center;
+ padding-top: 0;
+ font: 450 25px "Roboto", sans-serif;
+ border-bottom: grey 1px solid;
+}
+.join-form .container label {
+ padding: 5px 10px 5px 0;
+ display: inline-block;
+}
+.join-form .container .col-75.success input{
+  border-color: #2ecc71; 
+}
+.join-form .col-75.error input{
+  border-color: #e74c3c; 
+}
+.join-form .row-j i{
+ position: absolute;
+ padding:5px;
+ visibility: hidden;
+}
+.join-form .col-75 small{
+  margin-left: 40%;
+  visibility:hidden;
+}
+.join-form .col-75.success i.fa-check-circle{
+  color: #2ecc71;
+  visibility:visible;
+}
+.join-form .col-75.error i.fa-exclamation-circle{
+  color: #e74c3c;
+  visibility:visible;
+}
+.join-form .col-75.error small{
+  color: #e74c3c;
+  visibility:visible;
+}
+.row-j input[type=submit]{
+ background-color:orange;
+ color: white;
+ padding: 12px 20px;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ float: right;
+}
+.row-j input[type=submit]:hover{
+ background-color:darkorange;
+}
+.content .subtitle{
+  margin-top: 70px;
+  color: grey;
+  font:700 30px "Robot",sans-serif;
+  text-align: center;
+  border-bottom: grey 1px solid;
+}
+.content .section{
+  height: 310px;
+  margin-left: 40px;
+  margin-bottom: 50px;
+}
+.content .section::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+.content .section .column{
+  float:left;
+  margin-left:5px;
+  width:23%;
+  padding: 25px 10px;
+}
+.content .section .column .card{
+  padding-top: 15px;
+  padding-bottom:15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align:justify;
+  background-color: #fff;
+  font: 400 15px "Roboto",sans-serif;
+}
+.content .section .column .card  img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+.content .section .column .card h4{
+  text-align: center;
+}
+ /*END*/
+ /*CONSULT PAGE*/
+ .cslt-form{
+  background-image: url("images/consult-form.jpg");
+  background-size: cover;
+  background-position:center;
+  position: relative;
+  z-index: 1;
+  height: 580px;
+}
+.cslt-form::after{
+ content: "";
+ position: absolute;
+ top: 0;
+ background-color: rgba(0, 0, 0, 0.6);
+ left: 0;
+ right: 0;
+ bottom: 0;
+ display: block;
+ z-index: -1;
+}
+.cslt-form .container{
+ background-color:#f2f2f2;
+ width:1050px;
+ height: 440px;
+ border:0;
+ padding:30px;
+ margin-top:2em;
+ float: left;
+ margin-left: 20%;
+ margin-right: 20%;
+}
+.cslt-form .container form h2{
+ text-align: center;
+ padding-top: 0;
+ font: 450 25px "Roboto", sans-serif;
+ background-color: rgb(226, 195, 137);
+}
+.cslt-form .container label {
+ padding: 5px 10px 5px 0;
+ display: inline-block;
+}
+.cslt-form #name,#phno,#mail{
+  width: 90%;
+}
+.cslt-form #yesno, #city{
+  margin-bottom: 20px;
+}
+.cslt-form input{
+  margin-top: 6px;
+}
+.cslt-form .col-75.success input{
+  border-color: #2ecc71; 
+}
+.cslt-form .col-75.error input{
+  border-color: #e74c3c; 
+}
+.cslt-form .row-j i{
+ position: absolute;
+ padding:5px;
+ visibility: hidden;
+}
+.cslt-form .col-75 small{
+  margin-left: 40%;
+  visibility:hidden;
+}
+.cslt-form .col-75.success i.fa-check-circle{
+  color: #2ecc71;
+  visibility:visible;
+}
+.cslt-form .col-75.error i.fa-exclamation-circle{
+  color: #e74c3c;
+  visibility:visible;
+}
+.cslt-form .col-75.error small{
+  color: #e74c3c;
+  visibility:visible;
+}
+.row-j input[type=button]{
+ background-color:orange;
+ color: white;
+ padding: 12px 20px;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ float: right;
+}
+.row-j input[type=submit]:hover{
+ background-color:darkorange;
+}
+ /*END*/
+ /*DETAILS PAGE*/
+ .detail-page {
+   background-color:whitesmoke;
+   height: 150%;
+ }
+ .detail-page .btn{
+   text-align: center;
+ }
+ .detail-page .btn .req-btn{
+   margin-top: 25px;
+   font: 400 20px"Oswald",sans-serif;
+   color: black;
+   background-color: orange;
+   border:0;
+   border-radius: 1px;
+ }
+ .detail-page .btn .req-btn:hover{
+  transform: scale(1.3);
+ }
+ .detail-page .titles{
+   text-align: center;
+   font: 400 "Roboto",sans-serif;
+ }
+ .detail-page .content{
+   margin-left:30em;
+   margin-right: 30em;
+ }
+ .detail-page .content div{
+   background-color: white;
+   font: 400 15px "Roboto",sans-serif;
+   padding-left: 30px;padding-top: 10px;
+ }
+ .detail-page .content div p{
+   line-height: 22px;
+   text-align: justify;
+ }
+ /*END*/
+ /*FOOTER AREA*/
+  .footer{
+    background-color:black;
+}
+  .footer  .inner-footer{
+    width: 95%;
+    margin: auto;
+    padding:30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+} 
+.footer  .inner-footer .footer-items{
+  width: 25%;
+  padding:10px 20px;
+  box-sizing:border-box;
+}
+.footer .inner-footer .footer-items h1{
+  padding: 10px 0;
+  color: #fff;
+  font: 400 35px "Oswald", sans-serif;
+}
+.footer .inner-footer .footer-items sup{
+  position: relative;
+  font-size: 40%;
+  line-height: 0;
+  vertical-align: baseline;
+  top: -1.4em;
+}
+.footer  .inner-footer .footer-items h2{
+  margin:10px 0;
+  color:#fff;
+  font: 400 18px "Oswald", sans-serif;
+  font-size:16px;
+  font-weight:lighter;
+  text-transform:uppercase;
+}
+.footer  .inner-footer .footer-items .border{
+  height: 2px;
+  width: 40px;
+  background: orange;
+}
+.footer .inner-footer .footer-items p{
+  color: #fff;
+  font: 400 14px/26px "Oswald", sans-serif;
+  color: #fefefe;
+}
+.footer  .inner-footer .footer-items ul{
+list-style: none;
+color: #fff;
+font: 400 14px/28px "Roboto", sans-serif;
+font-size: 15px;
+letter-spacing: 0.6px;
+}
+.footer  .inner-footer .footer-items ul a{
+  text-decoration:none;
+  outline:none;
+  color:#fff;
+  transition: 0.3s;
+}
+.footer  .inner-footer .footer-items ul a:hover{
+  color: orange;
+}
+.footer  .inner-footer .footer-items ul li{
+  margin: 10px 0;
+  height: 25px;
+}
+.footer  .inner-footer .footer-items li i{
+  margin-right: 20px;
+  color: orange;
+}
+.footer .inner-footer .social-media{
+  width:100%;
+  color:#fff;
+  text-align: center;
+}
+.footer .inner-footer  .social-media a{
+  text-decoration: none;
+}
+.footer  .inner-footer  .social-media i{
+  height: 15px;
+  width: 15px;
+  margin:20px 5px;
+  padding: 10px;
+  color: #fff;
+  border-radius: 50%;
+  border: 2px solid orange;
+}
+.footer  .inner-footer .social-media i:hover{
+  background:orange;
+}
+.footer  .copyright_area {
+  background: #090909;
+  font: 400 14px/100px "Roboto", sans-serif;
+  color: #fefefe;
+  text-align: center;
+}
+.footer  .copyright_area a {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #f6b60b;
+}
+.footer  .copyright_area a:hover, .footer  .copyright_area a:focus {
+  color: #fefefe;
+}
+ /*END*/
+  
+ 

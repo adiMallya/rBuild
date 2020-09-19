@@ -15,7 +15,7 @@ A Construction/Renovation services site :house:
 - Curently all the scripts are written only for the client-side 
 - This site was part of a college assignment, and not for any commercial purpose. 
 
-## Improvements
+## Need to fix..
 - TBH this site needs alot of changes :stuck_out_tongue:
 - Maybe try making the pages mobile responsive ? Hmm.. :sweat_smile:
 - Maybe write better stylesheets ?Nvm I suck at CSS :stuck_out_tongue_closed_eyes:

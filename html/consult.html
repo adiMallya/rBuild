@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>rBuild</title>
+         <!--Icon-->
+    <link rel="icon" href="../images/icon3.png" type="image/x-icon" />
+        <!--Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="../style.css"/>    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../js/consult.js"></script>
+</head>
+<body>
+     
+    <script>
+        $(function(){
+          $("#nav-placeholder").load("common/nav.html");
+        });
+    </script>
+    <header class="all_header_navbar-fixed-top" id="nav-placeholder"></header>
+    <!--Consultation-form-->
+    <section class="cslt-form">
+        <div class="container">
+            <form action="#" id="form4" name="consultform" method="GET">
+                <h2>100% hassle free and managed by us!</h2>
+                <div class="row-j">
+                    <div class="col-25">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="name" name="name" onblur="allLetter();">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small></small>
+                    </div>
+                </div>
+                <div class="row-j">
+                    <div class="col-25">
+                        <label for="phno">Phone</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="phno" name="phno" onblur="phoneNumeric();">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small></small>
+                    </div>
+                </div>
+
+                <div class="row-j">
+                    <div class="col-25">
+                        <label for="mail">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="mail" name="mail" onblur="validateEmail();">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small></small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="yesno">Category</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="radio" id="yesno" name="yesno" checked>Construction
+                        <input type="radio" id="yesno" name="yesno">Renovation
+                    </div>
+                </div>
+                <div class="row-j">
+                    <div class="col-25">
+                        <label for="city">City</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="city" name="city">
+                            <option value="bangalore">Bangalore</option>
+                            <option value="delhi">Delhi</option>
+                            <option value="kolkata">Kolkata</option>
+                            <option value="chennai">Chennai</option>
+                            <option value="pune">Pune</option>
+                        </select>
+                    </div>
+                </div>
+                <br/>
+                <div class="row-j">
+                    <input type="button" id="btnsubmit" value="SUBMIT" onclick="onSubmission();"/>
+                </div> 
+            </form>
+        </div>
+    </section>
+  <!-- Footer Area -->
+    <footer id=footer-area>
+        <div class="footer" id="foot-placeholder">  </div>
+        </footer>    
+        <!--End Footer Area -->
+    <script>
+        $(function(){
+            $("#foot-placeholder").load("common/footer.html");
+        });
+    </script> 
+    <!--End Footer Area -->
+</body>
+
+
+
+
+
+

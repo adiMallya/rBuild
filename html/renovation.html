@@ -6,45 +6,19 @@
 
     <title>rBuild</title>
          <!--Icon-->
-    <link rel="icon" href="images/icon3.png" type="image/x-icon" />
+    <link rel="icon" href="../images/icon3.png" type="image/x-icon" />
         <!--Stylesheet-->
-    <link rel="stylesheet" type="text/css" href="style.css"/>    
-    
+    <link rel="stylesheet" type="text/css" href="../style.css"/>    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 </head>
 <body>
      
-    <header class="all-header-navbar-fixed-top">
-    <!--Top Header Area-->
-    <section class="top_header_area">
-	    <div class="container1">
-            <ul class="nav navbar-nav navbar-right social_nav">
-                <li><a href="#"><i class="fa fa-facebook" ></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram" ></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin" ></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter" ></i></a></li>
-                <li class="cont"><a href="consult.html">Contact Us </a></li>
-            </ul>
-	    </div>
-	</section>
-    <!--End of Top Header Area-->
-
-    <!--Navigation Area-->
-    <div class="navbar">
-        <div class="container2">
-                <div class="top-nav">
-                    <a class="logo-to-main" href="index.html"><img class="logo-img" src="images/rsz_2website_logo1.png" alt=""></a>
-                        <ul>
-                          <li><a href="index.html">HOME</a></li>
-                          <li><a href="about.html">ABOUT US</a></li>
-                          <li><a href="construction.html">CONSTRUCTION</a></li>
-                          <li><a href="renovation.html">RENOVATION</a></li>
-                          <li><a href="pricing.html">PRICING</a></li>
-                          <li><a href="joinus.html"><button class="contact-btn">JOIN US</button></a></li>
-                        </ul>
-                </div>
-        </div>
-    </div> 
-    </header>                                                                                                                                            
+    <script>
+        $(function(){
+          $("#nav-placeholder").load("common/nav.html");
+        });
+    </script>
+    <header class="all_header_navbar-fixed-top" id="nav-placeholder"></header>                                                                                                                             
     <!--End Of Navigation Area-->
     <!-- Banner area -->
     <section class="banner_area2" data-stellar-background-ratio="0.5">
@@ -64,28 +38,28 @@
                 <div class="column">
                     <div class="card">
                       <a href="#"></a>
-                      <img src="images/house-reno.png">
+                      <img src="../images/house-reno.png">
                       <p>Full House Renovation</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <a href="#"></a>
-                       <img src="images/bathroom.png">
+                       <img src="../images/bathroom.png">
                        <p>Bathroom Renovation</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <a href="#"></a>
-                        <img src="images/floorTiling.png">
+                        <img src="../images/floorTiling.png">
                         <p>Floor Tiling Work</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <a href="#"></a>
-                        <img src="images/kitchen.png">
+                        <img src="../images/kitchen.png">
                         <p>Kitchen Renovation </p>
                     </div>
                 </div>
@@ -122,7 +96,7 @@
                 <div class="container">
                     <article>
                       <h2 id="s1">Why Renovate with rBuild?</h2>
-                      <img src="images/whyrbuild.jpg">
+                      <img src="../images/whyrbuild.jpg">
                       <div>
                           <p>A renovation project, in general, can last anywhere from a week all the way to 6 months and sometimes even longer depending on the amount of work needed. If the contractors are not skilled enough, things can go south and turn out to be a disaster, leaving you to pay through the nose. Thus it is important to choose a leading expert with all the right skills for such projects. This is why Housejoy Renovation exists.</p>
                       </div>
@@ -130,7 +104,7 @@
                     </br></br>
                     <article>
                         <h2 id="s2">Stages of Development</h2>
-                        <img src="images/stages-art.jpg">
+                        <img src="../images/stages-art.jpg">
                         <div>
                             <p>A renovation project is carried out in various stages to keep track of the progress and ensure that execution is done correctly. The entire project has to traverse through these stages of renovation i.e. inspection and quotation approval & booking, design (if needed), procurement of raw materials, appointing the labour force & supervisor, execution & monitoring, and handover</p>
                             <h3>Inspection & Quotation Sharing</h3>
@@ -150,7 +124,7 @@
                     </br></br>
                       <article>
                         <h2 id="s3">What is the Quality of Materilas we use?</h2>
-                        <img src="images/materila.jpg">
+                        <img src="../images/materila.jpg">
                         <div>
                             <p>We give the highest priority to client satisfaction and so we never compromise on the quality of materials used during home or office renovation. From basic sand, bricks, and cement to paint, wood, and electricals, we use the best quality of materials to maintain the highest quality standards. Whether it’s some minor renovation project or a major house renovation project, we make sure to provide the best quality (in both materials and services). Below are the quality standards we use for our raw materials</p>
                             <h3>Bricks</h3>
@@ -170,7 +144,7 @@
                       </br></br>
                       <article>
                         <h2 id="s4">Renovation Budget Planning</h2>
-                        <img src="images/budget.jpg">
+                        <img src="../images/budget.jpg">
                         <div>
                             <p>It is important to keep track of budget when renovating the house else one can end up spending more money than necessary. Whether it’s complete home renovation or individual parts of the house like kitchen renovation, bathroom renovation, etc; the cost is split into various elements - demolition of unwanted/damaged structures, debris removal, purchase of raw materials for reconstruction, labourers and supervisors.</p>
                             <h3>Know How Much You Can Afford</h3>
@@ -186,46 +160,13 @@
         </div>
     </section>
      <!-- Footer Area -->
-<footer id=footer-area>
-    <div class="footer">
-            <div class="inner-footer">
-                <div class="footer-items">
-                <h1>rBUILD <sup>&reg;</sup></h1>
-                <p>Building Together, Couldn't get Better.</p>
-                </div>
-                <div class="footer-items">
-                    <h2>QUICK LINK</h2>
-                    <div class="border"></div>
-                    <ul>
-                        <li><a href="about.html"><i class="fa fa-chevron-right"></i>About Us</a></li>
-                        <li><a href="pricing.html"><i class="fa fa-chevron-right"></i>Pricing</a></li>
-                        <li><a href="construction.html"><i class="fa fa-chevron-right"></i>Construction</a></li>
-                        <li><a href="renovation.html"><i class="fa fa-chevron-right"></i>Renovation</a></li>
-                        <li><a href="joinus.html"><i class="fa fa-chevron-right"></i>Join Us</a></li>
-                        <li><a href="#"><i class="fa fa-chevron-right"></i>Terms & Conditions</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-items">
-                    <h2>CONTACT US</h2>
-                    <div class="border"></div>
-                
-                        <p>Have questions, comments or just want to say hello:</p>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-envelope"></i>info@gmail.com</a></li>
-                            <li><a href="#"><i class="fa fa-phone"></i>+880 123 456 789</a></li>
-                        </ul>
-                        <div class="social-media">
-                            <a href="#"><i class="fa fa-facebook" aria-hidden="true" ></i></a>
-                            <a href="#"><i class="fa fa-twitter" aria-hidden="true" ></i></a>
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true" ></i></a>
-                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </div>
-                </div>
-            </div> 
-            <div class="copyright_area">
-                &copy;rBuild 2020. All rights reserved. 
-            </div>
-        </div>
-    </footer>  
+    <footer id=footer-area>
+    <div class="footer" id="foot-placeholder">  </div>
+    </footer>    
+    <!--End Footer Area -->
+    <script>
+        $(function(){
+            $("#foot-placeholder").load("common/footer.html");
+        });
+    </script>
     <!--End Footer Area -->

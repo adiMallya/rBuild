@@ -229,7 +229,7 @@ html,body
   padding-top: 20px;
 }
 .our_achievments_area {
-  background: url("../images/achievments_bg.jpg") no-repeat fixed;
+  background: url("images/achievments_bg.jpg") no-repeat fixed;
   background-position: center;
   text-align: center;
   position: relative;
@@ -287,7 +287,7 @@ html,body
 /*ABOUT-PAGE*/
 /*Banner*/
 .banner_area {
-  background: url("/images/banner-bg.jpg");
+  background: url("images/banner-bg.jpg");
   background-position: center;
   text-align: center;
   position: relative;
@@ -313,7 +313,7 @@ html,body
   padding-top: 60px;
 }
 .banner_area2 {
-  background: url("/images/web-banner.png");
+  background: url("images/web-banner.png");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -834,7 +834,7 @@ html,body
 .est-form .container .row-p .col-75 {
   float: left;
   width: 75%;
-  margin-top: 16px;
+  margin-top: 5px;
 }
 .row-p:after {
   content: "";

@@ -5,45 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>rBuild</title>
          <!--Icon-->
-    <link rel="icon" href="images/icon3.png" type="image/x-icon" />
+    <link rel="icon" href="/images/icon3.png" type="image/x-icon" />
         <!--Stylesheet-->
-    <link rel="stylesheet" type="text/css" href="style.css"/>    
-    <script type="text/javascript" src="js/join.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style.css"/>    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="/js/join.js"></script>
 </head>
 <body>
      
-    <header class="all-header-navbar-fixed-top">
-    <!--Top Header Area-->
-    <section class="top_header_area">
-	    <div class="container1">
-            <ul class="nav navbar-nav navbar-right social_nav">
-                <li><a href="#"><i class="fa fa-facebook" ></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram" ></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin" ></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter" ></i></a></li>
-                <li class="cont"><a href="consult.html">Contact Us </a></li>
-            </ul>
-	    </div>
-	</section>
-    <!--End of Top Header Area-->
-
-    <!--Navigation Area-->
-    <div class="navbar">
-        <div class="container2">
-                <div class="top-nav">
-                    <a class="logo-to-main" href="index.html"><img class="logo-img" src="images/rsz_2website_logo1.png" alt=""></a>
-                        <ul>
-                          <li><a href="index.html">HOME</a></li>
-                          <li><a href="about.html">ABOUT US</a></li>
-                          <li><a href="construction.html">CONSTRUCTION</a></li>
-                          <li><a href="renovation.html">RENOVATION</a></li>
-                          <li><a href="pricing.html">PRICING</a></li>
-                          <li><a href="joinus.html"><button class="contact-btn">JOIN US</button></a></li>
-                        </ul>
-                </div>
-        </div>
-    </div> 
-    </header>                                                                                                                                            
+    <script>
+        $(function(){
+          $("#nav-placeholder").load("common/nav.html");
+        });
+    </script>
+    <header class="all_header_navbar-fixed-top" id="nav-placeholder"></header>                                                                                                                                         
     <!--End Of Navigation Area-->
     <!--Join Page-->
     <section class="join-form">
@@ -122,7 +97,7 @@
       <div class="section">
          <div class="column"> 
          <div class="card">
-            <img src="images/VerifiedLeads.png">
+            <img src="/images/VerifiedLeads.png">
             <h4>Verified Leads</h4>       
          <p>
              All Service Requests are verified before sending to professionals. Our executives talk to client to get their requirement and once confirmed we pass the lead to the professionals. 
@@ -131,7 +106,7 @@
          </div>
          <div class="column">
          <div class="card">
-            <img src="images/TrustedPartner.png">
+            <img src="/images/TrustedPartner.png">
             <h4>rBuild Trust</h4>    
          <p>
             rBuild adds trust to the whole ecosystem. Once verified you become our trusted partners. rBuild act as an escrow account and provides Payment Faciliation Services; so that you focus only on job
@@ -140,7 +115,7 @@
          </div>
         <div class="column">
         <div class="card">   
-            <img src="images/efficiency.png">
+            <img src="/images/efficiency.png">
             <h4>Smarter and Efficient Working</h4> 
         <p>
             We offer 'Online contracts' which is most disruptive in this space. This helps you to capture all the specification, quality standard, schedules, legal clauses etc. and submit it online. Along with this you give updates to client through our app. 
@@ -149,7 +124,7 @@
         </div>
         <div class="column">
         <div class="card">
-            <img src="images/ExpandBiz.png">
+            <img src="/images/ExpandBiz.png">
             <h4>Expand Your Business</h4>
         <p>
             Brick&Bolt is a place where you can create mark and a trusted vendor with us means more buisness opportunities. You can provide answers on our discussion forum and expand your reach to our customer base. 
@@ -159,46 +134,13 @@
       </div>
     </section>
      <!-- Footer Area -->
-<footer id=footer-area>
-    <div class="footer">
-            <div class="inner-footer">
-                <div class="footer-items">
-                <h1>rBUILD <sup>&reg;</sup></h1>
-                <p>Building Together, Couldn't get Better.</p>
-                </div>
-                <div class="footer-items">
-                    <h2>QUICK LINK</h2>
-                    <div class="border"></div>
-                    <ul>
-                        <li><a href="about.html"><i class="fa fa-chevron-right"></i>About Us</a></li>
-                        <li><a href="pricing.html"><i class="fa fa-chevron-right"></i>Pricing</a></li>
-                        <li><a href="construction.html"><i class="fa fa-chevron-right"></i>Construction</a></li>
-                        <li><a href="renovation.html"><i class="fa fa-chevron-right"></i>Renovation</a></li>
-                        <li><a href="joinus.html"><i class="fa fa-chevron-right"></i>Join Us</a></li>
-                        <li><a href="#"><i class="fa fa-chevron-right"></i>Terms & Conditions</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-items">
-                    <h2>CONTACT US</h2>
-                    <div class="border"></div>
-                
-                        <p>Have questions, comments or just want to say hello:</p>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-envelope"></i>info@gmail.com</a></li>
-                            <li><a href="#"><i class="fa fa-phone"></i>+880 123 456 789</a></li>
-                        </ul>
-                        <div class="social-media">
-                            <a href="#"><i class="fa fa-facebook" aria-hidden="true" ></i></a>
-                            <a href="#"><i class="fa fa-twitter" aria-hidden="true" ></i></a>
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true" ></i></a>
-                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </div>
-                </div>
-            </div> 
-            <div class="copyright_area">
-                &copy;rBuild 2020. All rights reserved. 
-            </div>
-        </div>
-</footer>  
+    <footer id=footer-area>
+    <div class="footer" id="foot-placeholder">  </div>
+    </footer>    
+        <!--End Footer Area -->
+    <script>
+        $(function(){
+            $("#foot-placeholder").load("common/footer.html");
+        });
+    </script>
     <!--End Footer Area -->
